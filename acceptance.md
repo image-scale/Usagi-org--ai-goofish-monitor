@@ -16,11 +16,22 @@
 ## Task 2: Cron Expression Utilities
 
 ### Acceptance Criteria
-- [ ] normalize_cron_expression expands aliases: "@daily" -> "0 0 * * *"
-- [ ] normalize_cron_expression returns None for empty/None input
-- [ ] build_cron_trigger accepts 5-field cron expressions (minute hour day month weekday)
-- [ ] build_cron_trigger accepts 6-field cron expressions (second minute hour day month weekday)
-- [ ] build_cron_trigger accepts cron aliases like @hourly, @daily, @weekly, @monthly, @yearly
-- [ ] build_cron_trigger supports timezone parameter
-- [ ] validate_cron_expression returns normalized expression for valid input
-- [ ] validate_cron_expression raises ValueError with helpful message for invalid input
+- [x] normalize_cron_expression expands aliases: "@daily" -> "0 0 * * *"
+- [x] normalize_cron_expression returns None for empty/None input
+- [x] build_cron_trigger accepts 5-field cron expressions (minute hour day month weekday)
+- [x] build_cron_trigger accepts 6-field cron expressions (second minute hour day month weekday)
+- [x] build_cron_trigger accepts cron aliases like @hourly, @daily, @weekly, @monthly, @yearly
+- [x] build_cron_trigger supports timezone parameter
+- [x] validate_cron_expression returns normalized expression for valid input
+- [x] validate_cron_expression raises ValueError with helpful message for invalid input
+
+## Task 3: Failure Circuit Breaker
+
+### Acceptance Criteria
+- [ ] record_failure tracks consecutive failures per task
+- [ ] Circuit opens (pauses task) after threshold consecutive failures
+- [ ] should_skip_start returns skip=True when task is paused
+- [ ] should_notify=True once per day when task is in paused state
+- [ ] record_success resets the failure counter and clears pause
+- [ ] Auto-recovery: when cookie file modification time changes, pause is lifted
+- [ ] State is persisted to JSON file for durability across restarts

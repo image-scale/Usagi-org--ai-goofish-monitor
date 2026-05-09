@@ -5,8 +5,8 @@ Implement the project bottom-up focusing on utility modules first, then core bus
 
 ## Tasks
 - [x] Task 1: Implement keyword rule matching engine that filters products by keyword rules with OR-match logic, handling alphanumeric tokens as whole-word matches (keyword_rule_engine)
-- [>] Task 2: Implement cron expression utilities that validate and normalize cron expressions including aliases like @daily and 5/6-field formats (cron_utils)
-- [ ] Task 3: Implement failure circuit breaker that pauses tasks after consecutive failures with daily notification rate limiting and auto-recovery when login state updates (failure_guard)
+- [x] Task 2: Implement cron expression utilities that validate and normalize cron expressions including aliases like @daily and 5/6-field formats (cron_utils)
+- [>] Task 3: Implement failure circuit breaker that pauses tasks after consecutive failures with daily notification rate limiting and auto-recovery when login state updates (failure_guard)
 - [ ] Task 4: Implement utility functions including retry decorator, safe nested dict access, filename sanitization, link conversion, and date formatting (utils)
 - [ ] Task 5: Implement account strategy resolver that determines runtime account selection based on strategy type, state files, and account pool availability (account_strategy)
 - [ ] Task 6: Implement seller profile cache with TTL expiration and request coalescing for concurrent fetches (seller_cache)

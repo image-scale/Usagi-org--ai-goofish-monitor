@@ -34,3 +34,10 @@
 **Commit**: Add account strategy resolver for determining runtime account selection
 **Acceptance**: 6/6 criteria met
 **Verification**: tests FAIL on previous state, PASS on current state
+
+## Round 6
+**Task**: Task 6 — Seller profile cache
+**Files created**: src/seller_cache.py, tests/test_seller_cache.py
+**Commit**: Add seller profile cache with TTL expiration and request coalescing
+**Acceptance**: 4/4 criteria met
+**Verification**: tests FAIL on previous state, PASS on current state

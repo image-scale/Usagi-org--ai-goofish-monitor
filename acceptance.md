@@ -59,7 +59,17 @@
 ## Task 6: Seller Profile Cache
 
 ### Acceptance Criteria
-- [ ] Cache reuses values within TTL, avoiding redundant loader calls
-- [ ] Cache returns deep copies to prevent mutation of cached values
-- [ ] Concurrent requests for same key coalesce into single loader call
-- [ ] Expired entries are evicted on next access
+- [x] Cache reuses values within TTL, avoiding redundant loader calls
+- [x] Cache returns deep copies to prevent mutation of cached values
+- [x] Concurrent requests for same key coalesce into single loader call
+- [x] Expired entries are evicted on next access
+
+## Task 7: Search Pagination Handler
+
+### Acceptance Criteria
+- [ ] is_search_results_response matches search API URL pattern with POST method
+- [ ] is_search_results_response rejects URLs not matching exact pattern
+- [ ] advance_search_page returns no_next_button when button not found
+- [ ] advance_search_page retries on timeout and returns response_timeout after exhausting retries
+- [ ] advance_search_page returns success with response when page advances
+- [ ] advance_search_page returns click_timeout when button click times out

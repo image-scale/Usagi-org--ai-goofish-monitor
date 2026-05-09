@@ -13,4 +13,4 @@ Implement the project bottom-up focusing on utility modules first, then core bus
 - [x] Task 7: Implement search pagination handler that advances through search result pages with retry logic and timeout handling (search_pagination)
 - [x] Task 8: Implement notification service with base client abstraction and webhook client that renders JSON templates with product data (notification_service)
 - [x] Task 9: Implement price history service for recording market snapshots, loading price data, computing market summaries and deal scores (price_history)
-- [>] Task 10: Implement task domain models with Pydantic validation for Task, TaskCreate, TaskUpdate, and TaskGenerateRequest including keyword rule normalization (task_models)
+- [x] Task 10: Implement task domain models with Pydantic validation for Task, TaskCreate, TaskUpdate, and TaskGenerateRequest including keyword rule normalization (task_models)

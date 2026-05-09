@@ -97,11 +97,11 @@
 ## Task 10: Task Domain Models
 
 ### Acceptance Criteria
-- [ ] Task model has can_start() and can_stop() based on enabled and is_running state
-- [ ] Task model has apply_update() that returns new instance with updates applied
-- [ ] TaskCreate validates AI mode requires description, keyword mode requires keywords
-- [ ] TaskCreate validates fixed account strategy requires account_state_file
-- [ ] Keyword rules are normalized: deduplicated, trimmed, lowercased
-- [ ] Legacy keyword_rule_groups are flattened to keyword_rules list
-- [ ] Cron expressions are validated during model creation
-- [ ] Price values are normalized to string format
+- [x] Task model has can_start() and can_stop() based on enabled and is_running state
+- [x] Task model has apply_update() that returns new instance with updates applied
+- [x] TaskCreate validates AI mode requires description, keyword mode requires keywords
+- [x] TaskCreate validates fixed account strategy requires account_state_file
+- [x] Keyword rules are normalized: deduplicated, trimmed, lowercased
+- [x] Legacy keyword_rule_groups are flattened to keyword_rules list
+- [x] Cron expressions are validated during model creation
+- [x] Price values are normalized to string format

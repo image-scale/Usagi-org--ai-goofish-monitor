@@ -62,3 +62,10 @@
 **Commit**: Add price history service for recording market snapshots and computing analytics
 **Acceptance**: 6/6 criteria met
 **Verification**: tests FAIL on previous state, PASS on current state
+
+## Round 10
+**Task**: Task 10 — Task domain models
+**Files created**: src/task_models.py, tests/test_task_models.py
+**Commit**: Add task domain models with Pydantic validation
+**Acceptance**: 8/8 criteria met
+**Verification**: tests FAIL on previous state, PASS on current state

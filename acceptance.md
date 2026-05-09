@@ -67,9 +67,19 @@
 ## Task 7: Search Pagination Handler
 
 ### Acceptance Criteria
-- [ ] is_search_results_response matches search API URL pattern with POST method
-- [ ] is_search_results_response rejects URLs not matching exact pattern
-- [ ] advance_search_page returns no_next_button when button not found
-- [ ] advance_search_page retries on timeout and returns response_timeout after exhausting retries
-- [ ] advance_search_page returns success with response when page advances
-- [ ] advance_search_page returns click_timeout when button click times out
+- [x] is_search_results_response matches search API URL pattern with POST method
+- [x] is_search_results_response rejects URLs not matching exact pattern
+- [x] advance_search_page returns no_next_button when button not found
+- [x] advance_search_page retries on timeout and returns response_timeout after exhausting retries
+- [x] advance_search_page returns success with response when page advances
+- [x] advance_search_page returns click_timeout when button click times out
+
+## Task 8: Notification Service
+
+### Acceptance Criteria
+- [ ] NotificationClient base class builds message with title, price, reason, and links
+- [ ] NotificationClient converts desktop links to mobile format when configured
+- [ ] NotificationService sends to all enabled clients concurrently
+- [ ] NotificationService collects success/failure results per channel
+- [ ] WebhookClient renders JSON templates with product data placeholders
+- [ ] WebhookClient correctly URL-encodes query parameters

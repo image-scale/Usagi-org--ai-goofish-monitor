@@ -87,9 +87,21 @@
 ## Task 9: Price History Service
 
 ### Acceptance Criteria
-- [ ] parse_price_value handles currency symbols, wan notation, and invalid values
-- [ ] record_market_snapshots stores price snapshots with deduplication
-- [ ] load_price_snapshots retrieves snapshots for a keyword
-- [ ] build_price_history_insights computes market summary with avg/median/min/max
-- [ ] build_item_price_context computes deal score and price change for specific item
-- [ ] Daily trend aggregation groups snapshots by day
+- [x] parse_price_value handles currency symbols, wan notation, and invalid values
+- [x] record_market_snapshots stores price snapshots with deduplication
+- [x] load_price_snapshots retrieves snapshots for a keyword
+- [x] build_price_history_insights computes market summary with avg/median/min/max
+- [x] build_item_price_context computes deal score and price change for specific item
+- [x] Daily trend aggregation groups snapshots by day
+
+## Task 10: Task Domain Models
+
+### Acceptance Criteria
+- [ ] Task model has can_start() and can_stop() based on enabled and is_running state
+- [ ] Task model has apply_update() that returns new instance with updates applied
+- [ ] TaskCreate validates AI mode requires description, keyword mode requires keywords
+- [ ] TaskCreate validates fixed account strategy requires account_state_file
+- [ ] Keyword rules are normalized: deduplicated, trimmed, lowercased
+- [ ] Legacy keyword_rule_groups are flattened to keyword_rules list
+- [ ] Cron expressions are validated during model creation
+- [ ] Price values are normalized to string format

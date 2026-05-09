@@ -55,3 +55,10 @@
 **Commit**: Add notification service for sending alerts to multiple channels concurrently
 **Acceptance**: 6/6 criteria met
 **Verification**: tests FAIL on previous state, PASS on current state
+
+## Round 9
+**Task**: Task 9 — Price history service
+**Files created**: src/price_history.py, tests/test_price_history.py
+**Commit**: Add price history service for recording market snapshots and computing analytics
+**Acceptance**: 6/6 criteria met
+**Verification**: tests FAIL on previous state, PASS on current state

@@ -77,9 +77,19 @@
 ## Task 8: Notification Service
 
 ### Acceptance Criteria
-- [ ] NotificationClient base class builds message with title, price, reason, and links
-- [ ] NotificationClient converts desktop links to mobile format when configured
-- [ ] NotificationService sends to all enabled clients concurrently
-- [ ] NotificationService collects success/failure results per channel
-- [ ] WebhookClient renders JSON templates with product data placeholders
-- [ ] WebhookClient correctly URL-encodes query parameters
+- [x] NotificationClient base class builds message with title, price, reason, and links
+- [x] NotificationClient converts desktop links to mobile format when configured
+- [x] NotificationService sends to all enabled clients concurrently
+- [x] NotificationService collects success/failure results per channel
+- [x] WebhookClient renders JSON templates with product data placeholders
+- [x] WebhookClient correctly URL-encodes query parameters
+
+## Task 9: Price History Service
+
+### Acceptance Criteria
+- [ ] parse_price_value handles currency symbols, wan notation, and invalid values
+- [ ] record_market_snapshots stores price snapshots with deduplication
+- [ ] load_price_snapshots retrieves snapshots for a keyword
+- [ ] build_price_history_insights computes market summary with avg/median/min/max
+- [ ] build_item_price_context computes deal score and price change for specific item
+- [ ] Daily trend aggregation groups snapshots by day

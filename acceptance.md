@@ -39,9 +39,19 @@
 ## Task 4: Utility Functions
 
 ### Acceptance Criteria
-- [ ] safe_get retrieves nested dict/list values safely, returning default on missing keys
-- [ ] sanitize_filename removes/replaces unsafe characters for filenames
-- [ ] get_link_unique_key extracts unique portion of product link (before first &)
-- [ ] convert_goofish_link transforms desktop item URLs to mobile format with encoded parameters
-- [ ] format_registration_days converts total days to "X years Y months" display format
-- [ ] retry_on_failure decorator retries async functions on HTTP errors with configurable retries/delay
+- [x] safe_get retrieves nested dict/list values safely, returning default on missing keys
+- [x] sanitize_filename removes/replaces unsafe characters for filenames
+- [x] get_link_unique_key extracts unique portion of product link (before first &)
+- [x] convert_goofish_link transforms desktop item URLs to mobile format with encoded parameters
+- [x] format_registration_days converts total days to "X years Y months" display format
+- [x] retry_on_failure decorator retries async functions on HTTP errors with configurable retries/delay
+
+## Task 5: Account Strategy Resolver
+
+### Acceptance Criteria
+- [ ] clean_account_state_file returns None for empty/null/undefined values
+- [ ] normalize_account_strategy returns valid strategy from set {auto, fixed, rotate}
+- [ ] normalize_account_strategy infers "fixed" when account_state_file is provided
+- [ ] resolve_account_runtime_plan returns forced_account for "fixed" strategy
+- [ ] resolve_account_runtime_plan enables use_account_pool for "rotate" strategy
+- [ ] resolve_account_runtime_plan prefers root state file for "auto" strategy when available

@@ -20,3 +20,10 @@
 **Commit**: Add task failure circuit breaker that pauses tasks after consecutive failures
 **Acceptance**: 7/7 criteria met
 **Verification**: tests FAIL on previous state, PASS on current state
+
+## Round 4
+**Task**: Task 4 — Utility functions
+**Files created**: src/utils.py, tests/test_utils.py
+**Commit**: Add utility functions for text processing, link conversion, and async retry
+**Acceptance**: 6/6 criteria met
+**Verification**: tests FAIL on previous state, PASS on current state

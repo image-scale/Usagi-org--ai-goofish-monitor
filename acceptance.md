@@ -49,9 +49,17 @@
 ## Task 5: Account Strategy Resolver
 
 ### Acceptance Criteria
-- [ ] clean_account_state_file returns None for empty/null/undefined values
-- [ ] normalize_account_strategy returns valid strategy from set {auto, fixed, rotate}
-- [ ] normalize_account_strategy infers "fixed" when account_state_file is provided
-- [ ] resolve_account_runtime_plan returns forced_account for "fixed" strategy
-- [ ] resolve_account_runtime_plan enables use_account_pool for "rotate" strategy
-- [ ] resolve_account_runtime_plan prefers root state file for "auto" strategy when available
+- [x] clean_account_state_file returns None for empty/null/undefined values
+- [x] normalize_account_strategy returns valid strategy from set {auto, fixed, rotate}
+- [x] normalize_account_strategy infers "fixed" when account_state_file is provided
+- [x] resolve_account_runtime_plan returns forced_account for "fixed" strategy
+- [x] resolve_account_runtime_plan enables use_account_pool for "rotate" strategy
+- [x] resolve_account_runtime_plan prefers root state file for "auto" strategy when available
+
+## Task 6: Seller Profile Cache
+
+### Acceptance Criteria
+- [ ] Cache reuses values within TTL, avoiding redundant loader calls
+- [ ] Cache returns deep copies to prevent mutation of cached values
+- [ ] Concurrent requests for same key coalesce into single loader call
+- [ ] Expired entries are evicted on next access

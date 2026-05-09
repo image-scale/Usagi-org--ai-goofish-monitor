@@ -28,10 +28,20 @@
 ## Task 3: Failure Circuit Breaker
 
 ### Acceptance Criteria
-- [ ] record_failure tracks consecutive failures per task
-- [ ] Circuit opens (pauses task) after threshold consecutive failures
-- [ ] should_skip_start returns skip=True when task is paused
-- [ ] should_notify=True once per day when task is in paused state
-- [ ] record_success resets the failure counter and clears pause
-- [ ] Auto-recovery: when cookie file modification time changes, pause is lifted
-- [ ] State is persisted to JSON file for durability across restarts
+- [x] record_failure tracks consecutive failures per task
+- [x] Circuit opens (pauses task) after threshold consecutive failures
+- [x] should_skip_start returns skip=True when task is paused
+- [x] should_notify=True once per day when task is in paused state
+- [x] record_success resets the failure counter and clears pause
+- [x] Auto-recovery: when cookie file modification time changes, pause is lifted
+- [x] State is persisted to JSON file for durability across restarts
+
+## Task 4: Utility Functions
+
+### Acceptance Criteria
+- [ ] safe_get retrieves nested dict/list values safely, returning default on missing keys
+- [ ] sanitize_filename removes/replaces unsafe characters for filenames
+- [ ] get_link_unique_key extracts unique portion of product link (before first &)
+- [ ] convert_goofish_link transforms desktop item URLs to mobile format with encoded parameters
+- [ ] format_registration_days converts total days to "X years Y months" display format
+- [ ] retry_on_failure decorator retries async functions on HTTP errors with configurable retries/delay
